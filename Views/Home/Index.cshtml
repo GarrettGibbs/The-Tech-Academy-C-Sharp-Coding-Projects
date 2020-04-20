@@ -1,0 +1,62 @@
+﻿<div class="row no-gutters m-3">
+  <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+    <div class="card-header text-center">
+      <h5 class="m-0">Fill out the form below to receive a free car quote!</h5>
+    </div>
+    <div class="card-body">
+      @using (Html.BeginForm("GetQuote", "Home", FormMethod.Post))
+      {
+      <div class="row no-gutters">
+        <label for="FirstName" class="col-3 col-form-label">First Name:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+        </div>
+        <label for="LastName" class="col-3 col-form-label">Last Name:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+        </div>
+        <label for="EmailAddress" class="col-3 col-form-label">Email Address:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+        </div>
+        <label for="DateOfBirth" class="col-3 col-form-label">Date of Birth:</label>
+        <div class="form-group col-12 mb-1">
+          <input class="form-control" type="date" name="DateOfBirth">
+        </div>
+        <label for="CarYear" class="col-3 col-form-label">Car Year:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="CarYear" type="number" class="form-control" placeholder="Car Year" />
+        </div>
+        <label for="CarMake" class="col-3 col-form-label">Car Make:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="CarMake" type="text" class="form-control" placeholder="Car Make" />
+        </div>
+        <label for="CarModel" class="col-3 col-form-label">Car Model:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="CarModel" type="text" class="form-control" placeholder="Car Model" />
+        </div>
+        <label for="HasHadDui" class="col-4 col-form-label">Have you ever had a DUI?</label>
+        <select name="HasHadDui" class="custom-select form-group col-md-12 mb-1">
+          <option value=true>Yes</option>
+          <option value=false>No</option>
+        </select>
+        <label for="SpeedingTickets" class="col-3 col-form-label">Speeding Tickets:</label>
+        <div class="form-group col-md-12 mb-1">
+          <input name="SpeedingTickets" type="number" class="form-control" placeholder="Speeding Tickets" />
+        </div>
+        <label for="FullCoverage" class="col-5 col-form-label">Would you like full coverage?</label>
+        <select name="FullCoverage" class="custom-select form-group col-md-12">
+          <option value=true>Full Coverage</option>
+          <option value=false>Liability</option>
+        </select>
+        <label for="Gender" class="col-5 col-form-label">Are you a man or woman?</label>
+        <select name="Gender" class="custom-select form-group col-md-12">
+          <option value=true>Male</option>
+          <option value=false>Female</option>
+        </select>
+        <button type="submit" class="btn btn-block btn-success">Submit</button>
+      </div>
+      }
+    </div>
+  </div>
+</div>
