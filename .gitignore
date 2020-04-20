@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/TwentyOne/.vs/TwentyOne/v16
+/TwentyOne/bin/Debug/TwentyOne.pdb
+/TwentyOne/bin/Debug/TwentyOne.exe.config
+/TwentyOne/bin/Debug/TwentyOne.exe
+/TwentyOne/bin/Debug/Casino.pdb
+/TwentyOne/bin/Debug/Casino.dll
+/TwentyOne/bin/Debug
